@@ -1,0 +1,30 @@
+:root {
+    --Beige: #fdfbf6;
+    --White: #f7f7f7;
+    --Orange-white: #fdf6f2;
+    --Orange: #b45309;
+    --Orange-light: #f5e0c6;
+    --Orange-light2: #f5dfc6;
+    --Brown: #564840;
+    --Brown-light: #9b8a7f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--Brown);
+}
+
+body {
+    background: var(--Orange-white);
+    min-height: 100dvh;
+}
+
+main {
+    margin-block: 2rem;
+}

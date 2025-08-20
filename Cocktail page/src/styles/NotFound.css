@@ -1,0 +1,29 @@
+.section-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 100px - 10rem);
+    width: 80dvw;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    & img {
+        width: 60%;
+    }
+
+    & h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: var(--Orange);
+        line-height: 1.75;
+    }
+
+    & p {
+        line-height: 1.75;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

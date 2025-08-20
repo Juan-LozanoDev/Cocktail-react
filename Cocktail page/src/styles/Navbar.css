@@ -1,0 +1,150 @@
+.navbar {
+    display: flex;
+    background-color: var(--Beige);
+    box-shadow: 0px 2px 20px var(--Orange-light);
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-menu {
+    display: flex;
+    width: 80dvw;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 100px;
+        height: auto;
+    }
+
+    & h1 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: var(--Orange);
+        margin-left: 0.5rem;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+
+    & a {
+        text-decoration: none;
+    }
+
+    & a:hover {
+        color: var(--Orange);
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .navbar.active {
+        margin-bottom: 10rem;
+    }
+
+    .navbar-menu {
+        width: 100dvw;
+        margin: 0 2rem;
+    }
+
+    .main-logo {
+        & h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        width: 50px;
+        height: 100px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background: #333;
+        transform: translateY(-8px);
+        transition: 0.5s;
+    }
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: #333;
+        transform: translateY(8px);
+        transition: 0.5s;
+        box-shadow: 0 -8px 0 #333;
+    }
+
+    .hamburger.open::before {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .hamburger.open::after {
+        transform: translateY(0) rotate(-45deg);
+        box-shadow: none;
+    }
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 100px;
+        text-align: center;
+        padding-block: 0.5rem;
+        background-color: var(--Orange-light2);
+        transition: all ease-in-out 0.3s;
+    }
+
+    .menu.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-logo {
+
+        & img {
+            width: 80px;
+            height: auto;
+        }
+
+        & h1 {
+            font-size: 1.3rem;
+            margin-left: 0rem
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main-logo {
+        & h1 {
+            display: none;
+        }
+    }
+}

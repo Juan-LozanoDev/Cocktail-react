@@ -1,0 +1,19 @@
+.cocktails-section {
+    width: 80dvw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-of-cocktails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.cocktails-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--Orange);
+    margin-block: 2rem;
+}
