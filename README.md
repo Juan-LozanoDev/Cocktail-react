@@ -1,4 +1,4 @@
-🍸 Cocktail Explorer
+🍸 Cocktail Page
 
 Una aplicación web desarrollada en React que permite explorar diferentes cócteles utilizando la Cocktail DB API
 . Los usuarios pueden buscar bebidas, ver detalles y navegar entre diferentes páginas de la app.
